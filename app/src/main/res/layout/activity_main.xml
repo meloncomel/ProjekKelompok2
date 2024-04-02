@@ -4,7 +4,6 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#ffb9ca"
     android:backgroundTint="#00FFFFFF">
 
     <androidx.appcompat.widget.Toolbar
@@ -26,9 +25,7 @@
                 android:textColor="@color/black"
                 android:textSize="22sp"
                 android:textStyle="bold" />
-
         </RelativeLayout>
-
     </androidx.appcompat.widget.Toolbar>
 
     <TextView
@@ -56,10 +53,10 @@
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.091"
+        app:layout_constraintHorizontal_bias="0.104"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.397" />
+        app:layout_constraintVertical_bias="0.396" />
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/box1"
@@ -132,7 +129,7 @@
             app:layout_constraintVertical_bias="0.758" />
 
         <TextView
-            android:id="@+id/tv18"
+            android:id="@+id/target"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Rp.500.000"
@@ -180,11 +177,11 @@
         android:id="@+id/tablayout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:layout_constraintTop_toBottomOf="@id/tv5"
-        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:tabSelectedTextColor="@color/pink"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv5"
         app:tabIndicatorColor="@color/pink"
+        app:tabSelectedTextColor="@color/pink"
         app:tabTextColor="@color/black">
 
         <com.google.android.material.tabs.TabItem
@@ -207,7 +204,17 @@
             tools:layout_editor_absoluteY="275dp" />
     </com.google.android.material.tabs.TabLayout>
 
-
-
-
+    <ProgressBar
+        android:id="@+id/progressBar2"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:indeterminateOnly="false"
+        android:progress="30"
+        android:progressDrawable="@drawable/progress2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.676" />
 </androidx.constraintlayout.widget.ConstraintLayout>
