@@ -10,7 +10,7 @@
         android:id="@+id/toolbar"
         android:layout_width="match_parent"
         android:layout_height="?actionBarSize"
-        android:background="@color/pink"
+        android:background="@color/primary"
         app:navigationIcon="@drawable/baseline_arrow_back_ios_new_24">
 
         <RelativeLayout
@@ -19,8 +19,7 @@
 
             <TextView
                 android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:layout_centerVertical="true"
+                android:layout_height="wrap_content"
                 android:text="Rencana Tabungan"
                 android:textColor="@color/black"
                 android:textSize="22sp"
@@ -30,60 +29,43 @@
 
     <TextView
         android:id="@+id/tv2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Sepatu"
-        android:textColor="@color/black"
-        android:textSize="22sp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.501"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.102" />
-
-    <TextView
-        android:id="@+id/tv5"
-        android:layout_width="wrap_content"
+        android:layout_width="72dp"
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="172dp"
+        android:layout_marginEnd="167dp"
+        android:layout_marginBottom="625dp"
+        android:text="Sepatu"
+        android:textColor="@color/black"
+        android:textSize="22sp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/tv5"
+        android:layout_width="134dp"
+        android:layout_height="36dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
         android:layout_marginStart="30dp"
         android:layout_marginTop="274dp"
-        android:layout_marginEnd="276dp"
-        android:layout_marginBottom="423dp"
+        android:layout_marginEnd="247dp"
         android:text="Progress"
         android:textColor="@color/black"
         android:textSize="26sp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.104"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.396" />
+        android:textStyle="bold"/>
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/box1"
         android:layout_width="350dp"
         android:layout_height="162dp"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentBottom="true"
         android:layout_marginStart="30dp"
         android:layout_marginTop="112dp"
         android:layout_marginEnd="31dp"
         android:layout_marginBottom="457dp"
-        android:background="@drawable/kotak"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.517"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.196">
+        android:background="@drawable/kotak">
 
         <ImageView
             android:id="@+id/dompet"
@@ -96,7 +78,6 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="0.109" />
-
 
         <TextView
             android:id="@+id/tv3"
@@ -202,7 +183,7 @@
         <com.google.android.material.tabs.TabItem
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Hari"/>
+            android:text="Hari" />
 
         <com.google.android.material.tabs.TabItem
             android:layout_width="wrap_content"
@@ -225,6 +206,7 @@
         android:layout_height="200dp"
         android:layout_below="@+id/tablayout"
         android:indeterminateOnly="false"
+        android:layout_centerHorizontal="true"
         android:progress="30"
         android:progressDrawable="@drawable/progress2"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -242,10 +224,12 @@
         android:layout_alignParentTop="true"
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginStart="316dp"
-        android:layout_marginTop="642dp"
-        android:layout_marginEnd="39dp"
-        android:layout_marginBottom="33dp"
-        android:ali />
+        android:layout_marginStart="324dp"
+        android:layout_marginTop="632dp"
+        android:layout_marginEnd="31dp"
+        android:layout_marginBottom="43dp"
+        android:backgroundTint="@color/primary"
+        android:clickable="true"
+        android:src="@drawable/ic_add" />
 
 </RelativeLayout>
